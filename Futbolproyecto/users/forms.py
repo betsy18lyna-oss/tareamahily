@@ -1,6 +1,6 @@
 from django import forms
 from .models import Equipo
-from django.contrib.auth.forms import UserCreationForm 
+from django.contrib.auth.forms import UserCreationForm
 
 class EquipoForm(forms.ModelForm):
     class Meta:
@@ -9,4 +9,4 @@ class EquipoForm(forms.ModelForm):
 
 class CustomUserCreationForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
-        fields = UserCreationForm.Meta.fields + ('email',) 
+        fields = UserCreationForm.Meta.fields + ('email',)
